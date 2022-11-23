@@ -1,0 +1,10 @@
+// (commentaires)
+setPos = deplacer la tortue demarrage
+setLineWidht = taille de la tortue 
+changeColor(color.blue); ou  (#885263)
+forward(177);
+
+/* */ ( comme en css commentaires plus grand)
+
+
+backward(10); reculer la tortue
