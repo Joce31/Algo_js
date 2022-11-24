@@ -397,7 +397,7 @@ shiftColor(0);
     shiftColor(1/300);
 }
 */
-
+/*
 //exospierre2
 
 setPos(300,200);
@@ -416,6 +416,68 @@ setLineWidth(40);
 arcRight(150,360);
 setLineWidth(30);
 arcRight(150,360);
+*/
+
+//acrementation
+/*
+setPos(200,100);
+faceRight();
+setLineWidth(10);
+changeColor(color.red);
+let length = 100;
+for (let i=0;i<8;i++){
+    forward(length);
+    right(45);
+}
+*/
+/*
+setPos(100,300);
+faceRight();
+setLineWidth(10);
+changeColor(color.red);
+let length=150;
+  for (let i=0;i<5;i++){  
+    for (let i=0;i<3;i++){
+        forward(length);
+        left(120);
+    }
+    forward(length);
+    length=length-30;
+}*/
+/*
+setPos(300,300);
+faceRight();
+setLineWidth(20);
+changeColor(color.blue);
+let length=50;
+for (let i=0;i<4;i++){
+    forward(length);
+    left(120);
+    }
+
+    for (let i=0;i<5;i++){
+    length=length+50;
+    right(65);
+    for (let i=0;i<4;i++){
+    forward(length);
+        left(122);
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
