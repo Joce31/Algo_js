@@ -60,7 +60,7 @@ function bob(a,b,c) {
 	return result;
 }
 
-function calcul(a) {
+function calcul(a) {// IDEM A PYTHON POUR LE RESULTAT
 	let aaa=1;
 	for(let i=2; i<=a; i++) {
 		aaa *= i;
@@ -69,12 +69,12 @@ function calcul(a) {
 	return aaa;
 }
 
-function python(a) {
+function python(a) { //IDEM A CALCUL POUR LE RESULTAT
 	let monResultat;
 	if(a<2) {
 		monResultat = 1;
 	} else {
-		monResultat = a*python(a-1);
+		monResultat = a*python(a-1);// python en reference au resultat precedant
 	}
 	return monResultat;
 }
