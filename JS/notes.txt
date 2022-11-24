@@ -50,6 +50,11 @@ for (let i=0;i<4;i++){			=repeter 4 fois
 //declaration et affectation en meme temps.
 	let myVariable =40;
 
+variable : case qui va stocke une information.
+declaration : creer une variable.
+affectation : affecte un valeur a une variable
+afficher la console : console.log (name);
+incrementation : rajoute une valeur name=name+2 ou name+=2 (pour uniquement 1 name++)
 
 
 
