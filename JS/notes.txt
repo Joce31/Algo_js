@@ -8,3 +8,50 @@ forward(177);
 
 
 backward(10); reculer la tortue
+right(90); droite
+forward(100); avancer
+left(180-40); gauche => 180° = 140+40 tourner de 140° bers la gauche
+forward(50); avancer
+faceLeft (); orienter gauche
+forward(100);
+arcLeft(50,90); piquer a 50 (distance a gauche) 90 angle de rotation( quart de cercle)
+arcRight(100,90);
+
+up(); lever le stylo
+down(); poser le stylo
+
+right(135);
+forward(100);
+			repeter
+
+for(let i=0 ; i<4 ;i++){    =4 nombre de fois repete
+
+decaller mon bloque par une tabulation (indenté)
+
+}
+
+			repeter dans repeter
+
+for (let i=0;i<4;i++){			=repeter 4 fois
+	for (let j=0;j<3;j++){		=repeter 3 fois
+	}
+}
+
+//declaration d'une variable
+	let longueurMaison
+	let houseLength
+	let length;
+// affecter une valeur a une variable
+// mettre une valeur dans une variable
+	length = 54;
+// lire le contenu de la variable
+	 alert(length);
+	console.log ("Bonjour");
+//declaration et affectation en meme temps.
+	let myVariable =40;
+
+
+
+
+
+

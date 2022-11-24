@@ -399,15 +399,17 @@ shiftColor(0);
 */
 
 //exospierre2
-
+/*
 setPos(300,200);
 faceRight();
+let length=100;
 setLineWidth(140);
 shiftColor(0);
-arcRight(150,360);
-shiftColor(0.15);
+arcRight(length);
+length=length+12;
+/*shiftColor(0.15);
 setLineWidth(100);
-arcRight(150,360);
+arcRight(length);
 shiftColor(0.25);
 setLineWidth(60);
 arcRight(150,360);
@@ -415,10 +417,30 @@ shiftColor(0.15);
 setLineWidth(40);
 arcRight(150,360);
 setLineWidth(30);
-arcRight(150,360);
+arcRight(150,360);*/
+
+
+/*setPos(300,300);
+setLineWidth(3);
+faceRight();
+let length=200;
+for (let i=0;i<60;i++){
+    forward(length);
+    right(120);
+    length=length+12;
+}*/
 
 
 
 
-
-
+setPos(300,200);
+faceRight();
+setLineWidth(200);
+shiftColor(0);
+arcRight(100,360);
+let length=50;
+for (let i=0;i<100;i++){
+    changeColor(color.blue);
+    arcRight(100,360);
+    lenght=length+50;
+}
