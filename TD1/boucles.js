@@ -1,4 +1,5 @@
-/*// Exercice 1 : écrire 50 fois "Bonjour" dans la console.
+/*
+// Exercice 1 : écrire 50 fois "Bonjour" dans la console.
 console.log("Exercice 1");
 for(let i=0 ; i<50 ; i++){
     console.log("Bonjour");
@@ -41,17 +42,15 @@ for(let i=0 ; i<5 ; i++) {
 // A
 // B
 console.log("Exercice 3");
-// TODO
-
 for(let i=0 ; i<3 ; i++) {
     for(let i=0 ; i<5 ; i++) {
     console.log("A");
     }
-for(let i=0 ; i<1 ; i++) {
+    for(let i=0 ; i<1 ; i++) {
     console.log("B");
     }
 }
-*/
+
 // Exercice 4 : écrire dans la console :
 // 0
 // 1
@@ -64,7 +63,9 @@ for(let i=0 ; i<1 ; i++) {
 // 8
 // 9
 console.log("Exercice 4");
-// TODO
+for (let i=0;i<=9;i++){
+    console.log(i);
+}
 
 // Exercice 5 : écrire dans la console :
 // 3
@@ -78,7 +79,9 @@ console.log("Exercice 4");
 // 11
 // 12
 console.log("Exercice 5");
-// TODO
+for (let i=3;i<=12;i++){
+    console.log(i);
+}
 
 // Exerice 6 : écrire dans la console :
 // 0
@@ -91,8 +94,15 @@ console.log("Exercice 5");
 // 3
 // 0
 // 1
+
 console.log("Exercice 6");
-// TODO
+for (let i=0;i<=1;i++){
+    for (let j=0;j<=3;j++)
+    console.log(j);
+}
+    for (let k=0;k<=1;k++){
+        console.log(k);
+}
 
 // Exercice 7 : écrire dans la console :
 // 0
@@ -105,8 +115,16 @@ console.log("Exercice 6");
 // A
 // 8
 // 9
+
 console.log("Exercice 7");
-// TODO
+let i=0
+for (let i=0 ; i<=9 ; i++){
+    if (i<5 || i>7){
+    console.log(i)
+    }else
+        console.log("A")
+}
+*/
 
 // Exercice 8 : écrire dans la console :
 // 100
@@ -120,7 +138,13 @@ console.log("Exercice 7");
 // 8
 // 109
 console.log("Exercice 8");
-// TODO
+
+    for (let i=0;i<9;i++){
+if (i%3==0) {
+    console.log(i+100)
+}else
+    console.log(i%3)
+}
 
 // Exercice 9 : écrire dans la console :
 // 0
@@ -134,7 +158,13 @@ console.log("Exercice 8");
 // 208
 // 9
 console.log("Exercice 9");
-// TODO
+for (let i=0;i<9;i++){
+    if (i%3==0) {
+        console.log(i)
+    }else
+        console.log(i+100)
+    
+    }
 
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
 // 1 1
@@ -145,15 +175,19 @@ console.log("Exercice 9");
 // 6 5
 // 6 6
 console.log("Exercice 10");
-// TODO
+for (let i = 1; i <= 6; i++) {
+    for (let j = 1; j <= 6; j++) {
+      console.log(i,j);
+    }
+  }
 
 // Exercice 11 : adapter l'exercice précédent pour enlever les doublons (on ne veut pas afficher 1 2 et 2 1, mais seulement l'un des deux).
 console.log("Exercice 11");
-// TODO
+
 
 // Exercice 12 : en prenant des dés à 20 faces, combien de résultats différents (sans doublon) peut-on afficher ? (Autrement dit : adapter le code précédent pour compter les résultats au lieu de les afficher)
 console.log("Exercice 12");
-// TODO
+
 
 // Exercice 13 : afficher la table de multiplication de 1 (de 1 à 9):
 // 1x1 = 1
@@ -166,7 +200,14 @@ console.log("Exercice 12");
 // 1x8 = 8
 // 1x9 = 9
 console.log("Exercice 13");
-// TODO
+
+for (let x = 1; x <= 1; x++) {
+    for (let i = 1; i <= 9; i++) {
+      let result = x * i;
+      console.log(x + ' * ' + i + ' = ' + result);
+    }
+  }
+
 
 // Exercice 14 : que faut-il modifier du code précédent pour obtenir la table de 2 :
 // 2x1 = 2
@@ -178,8 +219,14 @@ console.log("Exercice 13");
 // 2x7 = 14
 // 2x8 = 16
 // 2x9 = 18
+
 console.log("Exercice 14");
-// TODO
+
+for (let i = 2; i <= 2; i++) {
+    for (let j = 2; j <= 9; j++) {
+      console.log(i + ' * ' + j + ' = ' + i*j);
+    }
+  }
 
 // Exercice 15 : comment généraliser pour afficher toutes les tables de multiplication de 1 à 9 :
 // 1x1 = 1
@@ -191,13 +238,23 @@ console.log("Exercice 14");
 // 9x8 = 72
 // 9x9 = 81
 console.log("Exercice 15");
-// TODO
+for (let i = 1; i <= 9; i++) {
+    for (let j = 1; j <= 9; j++) {
+      console.log(i + ' * ' + j + ' = ' + i*j);
+    }
+  }
 
+/*
 // Exercice 16 : calculer 1+2+3+4+...+99+100. (Vous devriez trouver 5050)
 console.log("Exercice 16");
-// TODO
+let somme = 0
+for (let i = 1; i <=100; i++) {
+    (somme=somme+i)
+      console.log(somme);
+    }
 
-// Exercice 17 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 302253
+*/
+// Exercice 17 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 30225i
 console.log("Exercice 17");
 // TODO
 
@@ -218,9 +275,9 @@ console.log("Exercice 18");
 // Exercice 19 : compter combien il y a de nombres multiples de 3 ou de 7 entre 1234 et 5678
 console.log("Exercice 19");
 // TODO
-
-// Exercice 20 : afficher dans la console :
 /*
+// Exercice 20 : afficher dans la console :
+
 *
 **
 ***
@@ -237,12 +294,12 @@ console.log("Exercice 20");
   ***
  ****
 *****
-*/
+
 console.log("Exercice 21");
 // TODO
 
 // Exercice 22 : afficher dans la console :
-/*
+
     *
    ***
   *****
@@ -263,6 +320,7 @@ console.log("Exercice 22");
   *****
    ***
     *
-*/
+
 console.log("Exercice 23");
 // TODO
+*/

@@ -459,7 +459,7 @@ let length=150;
     forward(length);
     length=length-30;
 }*/
-/*
+
 setPos(300,300);
 faceRight();
 setLineWidth(20);
@@ -477,7 +477,7 @@ for (let i=0;i<4;i++){
     forward(length);
         left(120);
     }
-}*/
+
 /*
 for (let i=0;i<3;i++)
 console.log ("coucou");

@@ -80,14 +80,15 @@ function python(a) { //IDEM A CALCUL POUR LE RESULTAT
 }
 
 function erogahtyp(a) {
-	let x;
-	if(a%2 == 0) {
-		x = a/2;
-	}
-	else {
-		x = 3*a+1;
-	}
-	return x;
+    let x;
+    if(a%2 == 0) {
+        x = a/2;
+    }
+    else {
+        x = 3*a+1;
+    }
+    return x;
+
 }
 
 function pythagore(a,b) {
