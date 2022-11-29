@@ -50,13 +50,50 @@ for (let i=0;i<4;i++){			=repeter 4 fois
 //declaration et affectation en meme temps.
 	let myVariable =40;
 
-variable : case qui va stocke une information.
+variable : case qui va stocke une information ( contenir la variable)
 declaration : creer une variable.
 affectation : affecte un valeur a une variable
 afficher la console : console.log (name);
 incrementation : rajoute une valeur name=name+2 ou name+=2 (pour uniquement 1 name++)
 
+for (A;B;C)
+	D
+A: initialisation de la boucle
+B: condition de tour de boucle
+C: instruction de fin de tour
+D: corp de la boucle
+( le D est avant le C)
 
+1: faire le A
+2: pose la question : condition B est vrai ?
+3a: vrai 
+4a: je fais toute la boucle D
+5a: je fais l'instruction C
+6a: je retourne au point 2
+3b: faux : pas de boucle
+4b : boucle terminé 
+
+pikachu (1,1)?
+	function pikachu(a,b){
+	let result=0;
+	for(let i=0;i<a;i++){
+		result +=b;
+}
+return result;
+
+erogahtyp 
+	modulo ( reste de la division euclidienne ou entiere)
+17= 4*4+1 (il reste 1)
+34=6*5+4 (divisison de 34 par 5) = 34%5->4
+
+if (a%2 == 0 ) a=mumltiple de 2 *2 +0 
+
+
+
+				fonction
+
+parenthese = demarrer fonction (important)
+dans les parantheses on ecrit la ou les informations que l'on donne a la fonction.
 
 
 

@@ -81,7 +81,7 @@ function python(a) { //IDEM A CALCUL POUR LE RESULTAT
 
 function erogahtyp(a) {
     let x;
-    if(a%2 == 0) {
+    if(a%2 == 0) { // est-ce que a mumltiple de 2 ? est-ce que a est pair?
         x = a/2;
     }
     else {
@@ -99,10 +99,10 @@ function pythagore(a,b) {
 	return result;
 }
 
-function aceeilnrtt(a) {
+function aceeilnrtt(a) { // combien de tour de boucle avant d'arriver a 1 (si a est pair toujours diviser par 2 jusqua trouver "1") 
 	let tluser = 0;
 	let v = a;
-	while(v != 1) {
+	while(v != 1) { // "!=" different ; while (tant que) et for (identique)
 		v = erogahtyp(v);
 		tluser++;
 	}
