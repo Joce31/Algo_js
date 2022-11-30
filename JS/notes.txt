@@ -91,9 +91,39 @@ if (a%2 == 0 ) a=mumltiple de 2 *2 +0
 
 
 				fonction
+point de vue externe
 
 parenthese = demarrer fonction (important)
 dans les parantheses on ecrit la ou les informations que l'on donne a la fonction.
 
+point de vue exterieur
 
+fonction say hello (){ 		=====>	j'ai creer une boite noir qui sappelle Hello
+	console.log(hello);	=====>  ce que fait la fonction
+}
+fonction say hi (name){
+	console.log("hi",name);
+}
+//point de vue interne
+function sayhello();{
+	console.log("bonjour");
+}
+//point de vue externe
+sayhello();
+//nomDeLaFonction() -> je demarre la fonction
+
+//point de vue interne
+fonction say hi (name){
+	console.log("hi",name);
+}
+console.log(name);
+
+//point de vue externe
+sayHi("pierre");
+
+function triple(n){
+	return 3*n;
+//point de vue externe
+//triple (16); ====> n'affiche rien car pas console.log
+console.log(triple(16));
 

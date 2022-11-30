@@ -1,0 +1,40 @@
+//la fonction setup sera utilise automatiquement par p5 quand on demarrera le dessin
+function setup() {
+  createCanvas(600,600);
+  console.log("setup");
+  //changer couleur du crayon "stroke();"
+  stroke(255,0,0);
+  //changer la taille du crayon 
+  strokeWeight(5);
+  //changer la couleur de remplissage 
+  fill (0,0,255,5);
+  //enlever le remplissage noFill();
+  
+}
+// la focntion "draw" est automatiquement appele par p5 une fois que le dessin est chargé en boucle a l'infini
+
+function draw() {
+  background(0,186,3,10);
+  point(260,80);
+  line(0,0,600,600)
+  noFill();
+  circle(200,200,200)
+  fill(255,255,0)
+  circle(200,300,50)
+  
+  ellipse(300,300,100,80)
+ //       x,y,pixel largeur,pixel hauteur
+  ellipse(400,200,80,100)
+  square(50,300,48)
+  rect(50,200,100,20)
+  point(mouseX,mouseY);
+  
+}
+function mouseClicked(){
+  point(400,50);
+  
+}
+
+function keyPressed(){
+  stroke (0,0,255);
+}
