@@ -127,3 +127,27 @@ function triple(n){
 //triple (16); ====> n'affiche rien car pas console.log
 console.log(triple(16));
 
+
+			tableaux
+// je cree un tableau dans la variable t.
+
+let t = [8,5,8,8,7,-3]
+
+// acceder a une case du tableau
+// j'ai besoin du tableau et du numero de case
+t[2] 
+// case 2 troisieme case de T
+//Changer variable
+t[2]=14
+// afficher t[2]
+console.log(t[2])
+// ajouter une nouvelle case a la fin du tableau
+t.push(-2);
+console.log(t);
+//supprimer la derniere case du tableau
+t.pop();
+console.log(t);
+
+//taille du tableau
+t.length
+
