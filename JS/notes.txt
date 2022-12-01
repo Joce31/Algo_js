@@ -151,3 +151,52 @@ console.log(t);
 //taille du tableau
 t.length
 
+Exemple de tableau : 
+let age1 = 5;
+let age2 = 78;
+let age3 = 45;
+let age4 = 7;
+let age5 = 31;
+
+let ages = [5,78,45,7,31];
+
+/*
+if(age1<18) {
+    console.log("La personne est mineure.");
+} else {
+    console.log("La personne est majeure.");
+}
+
+if(age2<18) {
+    console.log("La personne est mineure.");
+} else {
+    console.log("La personne est majeure.");
+}
+*/
+
+function afficherMessage(age) {
+    if(age<18) {
+        console.log("La personne est mineure.");
+    } else {
+        console.log("La personne est majeure.");
+    }
+}
+
+/*
+afficherMessage(age1);
+afficherMessage(age2);
+afficherMessage(age3);
+afficherMessage(age4);
+afficherMessage(age5);
+*/
+
+afficherMessage(ages[0]);
+afficherMessage(ages[1]);
+afficherMessage(ages[2]);
+afficherMessage(ages[3]);
+afficherMessage(ages[4]);
+
+for(let i = 0 ; i < 5 ; i++) {
+    afficherMessage(ages[i]);
+}
+
