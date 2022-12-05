@@ -11,6 +11,7 @@ console.log(tab1[2]);
 console.log(tab1[3]);
 console.log(tab1[4]);
 console.log(tab1[5]);
+console.log(tab1[6]);
 
 
 // 4) Retirer le dernier élément du tableau tab1.
@@ -22,20 +23,16 @@ let tab2=[238,222,228,216,200];
 tab2.push(58);
 
 // 7) Ajouter *un par un* tous les éléments du tableau tab2 à la fin du tableau tab1.
-tab1.push(tab2[0]);
-tab1.push(tab2[1]);
-tab1.push(tab2[2]);
-tab1.push(tab2[3]);
-tab1.push(tab2[4]);
-tab1.push(tab2[5]);
+for (let i=0;i<6;i++){  
+    tab1.push(tab2[i]);
+}
+
 
 // 8) Afficher *un par un* tous les éléments du tableau tab1.
-console.log(tab1[0]);
-console.log(tab1[1]);
-console.log(tab1[2]);
-console.log(tab1[3]);
-console.log(tab1[4]);
-console.log(tab1[5]);
+// pour chaque case du tableau, j'affiche la case.
+for (let i=0;i<12;i++){
+    console.log(tab1[i]);
+}
 
 // 9) Retirer et stocker dans la variable maVariable le dernier élément du tableau tab1.
 
@@ -48,7 +45,7 @@ console.log(tab1.length);
 tab1.push(66);
 console.log(tab1);
 // 12) Diviser par 2 toutes les variables contenues dans le tableau tab1.
-for (let i=0;i<12;i++){
+for (let i=0;i<12;i++){  //for (let i=0;i<tab1.length;i++){}
     tab1[i]=tab1[i]/2
 }
 console.log(tab1)

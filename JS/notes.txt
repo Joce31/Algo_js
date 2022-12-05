@@ -50,7 +50,7 @@ for (let i=0;i<4;i++){			=repeter 4 fois
 //declaration et affectation en meme temps.
 	let myVariable =40;
 
-variable : case qui va stocke une information ( contenir la variable)
+variable : case qui va stocke une information ( contenir la variable) "declarer"
 declaration : creer une variable.
 affectation : affecte un valeur a une variable
 afficher la console : console.log (name);
@@ -87,6 +87,10 @@ erogahtyp
 34=6*5+4 (divisison de 34 par 5) = 34%5->4
 
 if (a%2 == 0 ) a=mumltiple de 2 *2 +0 
+
+boucle while ( condition)
+	tant que la condition est "true" continue tour de boucle
+	si falase on sort de la boucle
 
 
 
@@ -126,6 +130,19 @@ function triple(n){
 //point de vue externe
 //triple (16); ====> n'affiche rien car pas console.log
 console.log(triple(16));
+
+fonction + nom de la fonction ( nom de la variable) crochet
+demarer focntion : nom de la fonction + parenthese
+
+function repeat ( mot, nombre){
+	for (let i=0 ; i<nombre; i++}{
+	console.log (mot)
+	}
+}
+
+appeler fonction
+ repeat ("pierre", 5)
+
 
 
 			tableaux
@@ -200,3 +217,46 @@ for(let i = 0 ; i < 5 ; i++) {
     afficherMessage(ages[i]);
 }
 
+un tableau? : plusieurs variables
+creer un tableau : [5,2,7] mettre dans une variable : let t = []
+deuxieme case de t : T [1] Afficher dans la console : console.log(t[1])
+nombre de case : t.length
+ajouter - 2 : t.push (-2)
+retirer -2 : t.pop() // affiche la valeur -2 (il y a un retour) pas le .push
+ecrire toutes cases d'un tableau : console.log(t[0])
+				   console.log(t[1])
+	ou
+				for (let i=0 ; i<t.length; i++]{}
+
+	for (let i=0; i<t.length;i++){ /// pour doubler le nombre de chiffre au tableau
+	t[i]*=2
+	}
+
+
+let t1 = [ 4,6,8,5]
+let t2 = [7,9,2]
+
+console.log(t1[1]);========> 6
+console. log(t2[0]);=========> 7
+
+/// point de vue internet			creation du tableau
+
+
+		t1 (les valeurs) et t2(les valeurs)
+let a = 5
+		(t1[a-3]) = (t1[5-3]) = t1[2] = 8
+
+let t3[];   /// pas de valeur dans le tableau
+
+console.log(t3[0]); // rien a afficher car pas de valeurs ( ca ne devrait pas exister)
+
+t3.push(5)
+t3.push(5)
+t3.push(5)    //// 3 valeur dans le tableau (le chiffre 5)
+
+
+for (let i = 0; i<t3.length;i++){
+	console.log("la case", i , "du tableau t3 contient ", t3[i])
+
+
+		
