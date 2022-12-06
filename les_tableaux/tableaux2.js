@@ -1,3 +1,4 @@
+/*
 // Écrire une fonction qui prend un tableau en entrée et affiche le dernier élément de ce tableau.
 let tab1 =  [12,24,58,4,69,12];
 let tab2 = [2,48,12];
@@ -40,7 +41,7 @@ function tabMin(t) {
 console.log(tabMin(tab1));
 
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le maximum de ce tableau.
-/*let tab1 =  [12,24,58,4,69,12];*/
+let tab1 =  [12,24,58,4,69,12];
 
 function tabMax(t) {
     let plusGrand=t[0];
@@ -54,56 +55,65 @@ function tabMax(t) {
 console.log(tabMax(tab1));
 
 // [Plus difficile - bonus] Écrire une fonction qui prend en entrée un tableau de nombres positifs et qui retourne la deuxième plus grande valeur du tableau.
-/*
-function nombrePositifs (p){
-    let positif = tab1[0]
-    for (let i=0; i<positif;i++){
-        if(i=tab1)
-    return nombrePositifs
-    }
+*/
 
-}
-console.log(nombrePositifs(tab1));*/
-
-
-
-
-
-
-/*
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
-let tab2 =  [12,24,58,4,69,12];
+let tab3 = [12,78,25,12,92,-98,12];
 
-function tabNfois (t){
-    if (t=t[i]){
-
-        console.log("true")
+function tabNfois(t,n){
+    let returnFois = 0
+    for (let i=0;i<t.length;i++){
+            if (n == t[i]){ 
+                returnFois++
+           }
+        }return returnFois
 }
-
-console.log(tabNfois(t))*/
+console.log(tabNfois(tab3,12))
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne true si le nombre existe dans le tableau, false sinon.
-let n=4
-function tabNfois (tab1,n){
-    for (let i=0; i<tab1;i++){
-    if (n=tab1){
-        return "true"
-    }else{
-        return "false"
-    }
+function exist(t,n){
+    for (let i=0;i<t.length;i++){
+            if (n == t[i]){ 
+               return true;
+            }else
+        
+        return false
 }
 }
-console.log(tabNfois(tab1,n))
+console.log(exist(tab3,12)) // ou console.log(tab3,exist(tab3,12))
+
 
 
 // [Bonus] Suite de l'exo : on **sait** que le tableau reçu est trié (on ne le vérifie pas). Comment exploiter cette information pour améliorer la recherche d'un élément ?
+function search(t,n,i1,i2){    //tableau, nombre, parti 1 et partie 2 du tableau (borne entre i1 et i2)
+    if (i1>i2){
+        return false;
+    }
+    let milieu = (i1+i2)/2
+        if t[milieu]==n {
+            return true;
 
-// Créer un tableau qui contient [1,2,3,...,7777].
+        }else if (t[milieu]<n){
+            search(t,n,milieu+1,i2);
+        }else{
+            return search(t,n,i1,milieu-1)
+        }
+    }
+// Créer un tableau qui contient [1,2,3,...,7777]. 
+tab4=0
+for (let i=0; i<7777;i++){
+    if (i<7777){
+        tab4.length+1
+    }
 
+}
+console.log(tab4)
 
 // Créer un tableau qui contient [10,20,30,...,77770].
+
+
 
 // En se servant du tableau précédent, créer un tableau qui contient [5,10,15,...,38885].
 
 // Écrire une fonction qui prend un tableau en entrée et qui en supprime les dernières valeurs, tant qu'elles sont inférieures à 50.
-// console.log(leNomDeVotreFonction([1,45,88,54,23,-100,12])); // doit afficher [1,45,88,54]*/
+// console.log(leNomDeVotreFonction([1,45,88,54,23,-100,12])); // doit afficher [1,45,88,54]
